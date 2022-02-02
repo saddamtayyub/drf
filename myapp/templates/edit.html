@@ -1,0 +1,23 @@
+<form method="POST" action="update/{{form.id}}"> 
+
+{% csrf_token%}
+<table>
+    <tr>
+        <td> 
+            <input name="name" required value="{{data.name}}">
+        </td>
+    </tr>
+
+    <tr>
+        <td> 
+            <input name="lastname" required value="{{data.lastname}}">
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            <input name="email" required value="{{data.email}}">
+        </td>
+    </tr>
+    <button type="submit">update</button>
+</table>
+</form>
